@@ -18,7 +18,7 @@ Harry Potter Craft is a web application that brings the magical world of Harry P
 - Vite
 - SWR for data fetching
 - Zustand for state management
-- SASS for styling
+- CSS modules for styling
 - Jest and React Testing Library for testing
 
 ## Getting Started
