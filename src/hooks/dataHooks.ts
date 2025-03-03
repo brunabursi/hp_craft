@@ -28,8 +28,8 @@ const fetcherParamsByFilter = {
   },
 };
 
-export const getFetcherParamsByFilter = (filter: Filter | null) => {
-  if (!filter) {
+export const getFetcherParamsByFilter = (filter: Filter) => {
+  if (filter === Filter.Characters) {
     return defaultFetcher;
   }
   if (filter === Filter.Favorite) {

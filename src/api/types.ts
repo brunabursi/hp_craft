@@ -12,10 +12,11 @@ export enum House {
 }
 
 export enum Filter {
+  Characters = "All",
   Students = "All Students",
   Staff = "All Staff",
   HouseMembers = "House Members",
-  Favorite = "Favorite",
+  Favorite = "Favorites",
 }
 
 type URLString = string;
