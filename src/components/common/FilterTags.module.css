@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80vw;
+  margin: 30px auto 0 auto;
+  gap: var(--space-sm);
+  border-bottom: 1px solid var(--element-color);
+}
+
+.chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-xs) var(--space-sm);
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--color-neutral);
+  color: var(--color-secundary);
+  border: 1px solid var(--element-color);
+  border-bottom: none;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--element-color);
+    color: var(--inverted-primary-color);
+  }
+}
+
+.active {
+  background-color: var(--element-color);
+  color: var(--inverted-primary-color);
+}
+
+@media (max-width: 768px) {
+  .list {
+    width: 95vw;
+  }
+  .chip {
+    font-size: 0.8rem;
+  }
+}

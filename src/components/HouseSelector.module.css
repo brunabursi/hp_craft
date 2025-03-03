@@ -1,0 +1,39 @@
+.houseButton {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  padding: 0;
+  filter: grayscale(1);
+  border: none;
+  &:hover {
+    filter: grayscale(0);
+  }
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-fit: contain;
+    height: 100%;
+    object-position: center center;
+  }
+
+  @container favorites-container (max-width: 250px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+.selected {
+  filter: grayscale(0);
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--element-color);
+  gap: 1vw;
+  container-type: inline-size;
+  container-name: favorites-container;
+}
