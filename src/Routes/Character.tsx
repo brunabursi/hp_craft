@@ -20,7 +20,7 @@ const Character = () => {
   if (character?.[0]?.name) {
     renderChar = character[0];
   } else {
-    return "tem algo bem errado se entrou aqui";
+    return "Failled to fetch characters data";
   }
 
   return (

@@ -31,7 +31,7 @@ const HouseSelector = () => {
           aria-label={house}
           title={house}
         >
-          <img src={`./public/${house}.png`} alt={`${house}-logo`} />
+          <img src={`/${house.toLowerCase()}.png`} alt={`${house}-logo`} />
         </button>
       ))}
     </div>
